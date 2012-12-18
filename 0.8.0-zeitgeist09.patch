@@ -1,0 +1,19 @@
+--- origsrc/gnome-activity-journal-0.8.0/gnome-activity-journal	2011-07-16 12:37:38.000000000 -0500
++++ src/gnome-activity-journal-0.8.0/gnome-activity-journal	2012-12-18 06:07:05.656559900 -0600
+@@ -98,5 +98,4 @@ from src.main import PortalWindow
+ 
+ if __name__ == "__main__":
+     portal = PortalWindow()
+-    gtk.gdk.threads_init()
+     gtk.main()
+--- origsrc/gnome-activity-journal-0.8.0/src/external.py	2011-06-15 09:21:27.000000000 -0500
++++ src/gnome-activity-journal-0.8.0/src/external.py	2012-12-18 06:05:47.300078200 -0600
+@@ -41,7 +41,7 @@ class ClientExtension(object):
+     _restarted = False
+ 
+     def __init__(self):
+-        self._extension = CLIENT._iface.get_extension("Log", "journal/activity")
++        self._extension = CLIENT._iface.get_extension("Histogram", "journal/activity")
+ 
+     def _show_error(self):
+         dialog = gtk.MessageDialog(
