@@ -2,7 +2,7 @@ inherit python-distutils
 
 NAME="gnome-activity-journal"
 VERSION=0.8.0
-RELEASE=1
+RELEASE=2
 CATEGORY="GNOME"
 SUMMARY="Zeitgeist log browser"
 DESCRIPTION="Zeitgeist is a service which logs the users' activities and
