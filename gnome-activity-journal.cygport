@@ -14,6 +14,8 @@ HOMEPAGE="http://zeitgeist-project.com/"
 SRC_URI="http://launchpad.net/${NAME}/${PV[1]}.${PV[2]}/${PV}/+download/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="0.8.0-zeitgeist09.patch"
 
+ARCH=noarch
+
 src_install() {
 	cd ${B}
 	python_distutils_install
